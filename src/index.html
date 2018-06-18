@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" priority="critical" href="css/critical.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/app/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/app/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/app/favicon-16x16.png">
+    <link rel="manifest" href="/img/icons/app/site.webmanifest">
+    <link rel="mask-icon" href="/img/icons/app/safari-pinned-tab.svg" color="#ef233c">
+    <link rel="shortcut icon" href="/img/icons/app/favicon.ico">
+    <meta name="msapplication-TileColor" content="#edf2f4">
+    <meta name="msapplication-config" content="/img/icons/app/browserconfig.xml">
+    <meta name="theme-color" content="#edf2f4">
+
+    <title>Joseph M Schmidt | Frontend Software Engineer</title>
+</head>
+
+<body class="container">
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox navCheckBox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item navItem">
+                    <a href="#about" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item navItem">
+                    <a href="#work" class="navigation__link">Work</a>
+                </li>
+                <li class="navigation__item navItem">
+                    <a href="#skills" class="navigation__link">Skills</a>
+                </li>
+                <li class="navigation__item navItem">
+                    <a href="#contact" class="navigation__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="bg-video">
+            <div class="bg-video__blur-edges"></div>
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="/media/retro-sun.mp4" type="video/mp4">
+                <source src="/media/retro-sun.webm" type="video/webm">
+                <img src="/img/retro-sun.jpg" alt="Retrowave Sun">
+            </video>
+        </div>
+        <div class="header__text-box">
+            <div class="header__title">
+                <h1 class="heading --one">Joseph Schmidt</h1>
+                <h2 class="heading --two">frontend engineer</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-about" id="about">
+            <div class="section-about__gallery gallery">
+                <div class="gallery__item --one">
+                    <img data-srcset="img/peru-xlrg.jpg 1000w,
+                            img/peru-lrg.jpg 600w,
+                            img/peru-med.jpg 450w,
+                            img/peru-small.jpg 325w" sizes="(max-width: 112.5em) 40vw,
+                            (max-width: 56.25em) 37vw,
+                            (max-width: 37.5em) 65vw,
+                            600px" alt="Joseph Schmidt - Hillside" class="gallery__img" data-src="img/peru-lrg.jpg">
+                </div>
+                <div class="gallery__item --two">
+                    <img data-srcset="img/css-code-lrg.jpg 310w,
+                            img/css-code-small.jpg 122w" sizes="(max-width: 112.5em) 13vw,
+                            (max-width: 37.5em) 20vw,
+                            197px" alt="CSS Grid Code in VS Code" class="gallery__img" data-src="img/css-code-med.jpg">
+                </div>
+                <div class="gallery__item --three">
+                    <img data-srcset="img/joseph-and-bear-lrg.jpg 310w,
+                            img/joseph-and-bear-small.jpg 122w" sizes="(max-width: 112.5em) 13vw,
+                            (max-width: 37.5em) 20vw,
+                            197px" alt="Joseph and the bear" class="gallery__img" data-src="img/joseph-and-bear-med.jpg">
+                </div>
+                <div class="gallery__item --four">
+                    <img data-srcset="img/potrero-view-lrg.jpg 1000w,
+                            img/potrero-view-small.jpg 122w" sizes="(max-width: 112.5em) 42vw,
+                            (max-width: 37.5em) 67vw,
+                            700px" alt="View from Potreo Hill" class="gallery__img" data-src="img/potrero-view-med.jpg">
+                </div>
+            </div>
+            <div class="section-about__text">
+                <h2 class="heading --two u-margin-btm">About Me</h2>
+                <p>Hi, my name is Joseph Schmidt.</p>
+                <p>I am a Senior Web Developer for DHAP Digital in San Francisco, CA. I have been working in the Bay Area as a developer for over a decade. My concentration is in frontend architecture with a focus on Test-driven development and Responsive design.</p>
+                <p>Over the years I have had the opportunity to work on some really great projects and work with some even better people. They have given me the tools to work on ever evolving projects and teams. Being able to adapt to a variety of codebases and frameworks has become an invaluable skill.</p>
+                <p>From starting something from scratch to inheriting a huge codebase that has had years of maintenance there is always an interesting challenge around each project. The goal is to build a better product than what came before it. The tools we have to today make creating complex applications so much less stressful by letting the developer focus on writing great code. Libraries like React and React Native allow us to build applications for multiple devices from a single codebase so can write less of it as well.</p>
+            </div>
+        </section>
+        <section class="section-projects" id="work">
+            <h2 class="heading --three u-margin-btm-med u-center-text">Work</h2>
+            <ul class="box-list">
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="#tangerine">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/tangerine-card.svg" alt="Tangerine Logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --tangerine">
+                            <h2 class="heading --two">
+                                Tangerine Forward Banking
+                            </h2>
+                            <img data-src="img/icons/logos/tangerine-card-white.svg" alt="Tangerine Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>Build Angular components</li>
+                                <li>Unit tests for maximum code coverage.</li>
+                                <li>Code Documentation</li>
+                                <li>Specifications Analysis</li>
+                                <li>Mobile First Development</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="#toyota">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/toyota-card.svg" alt="Toyota Logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --toyota">
+                            <h2 class="heading --two">Toyota</h2>
+                            <img data-src="img/icons/logos/toyota-card-white.svg" alt="Toyota Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>Build and Release Management</li>
+                                <li>Branch Strategies</li>
+                                <li>Static site generation</li>
+                                <li>Performance Improvements</li>
+                                <li>Feature Development</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="#lexus">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/lexus-card.svg" alt="Lexus logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --lexus">
+                            <h2 class="heading --two">Lexus Product Handbook</h2>
+                            <img data-src="img/icons/logos/lexus-card-white.svg" alt="Lexus Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>iOS and Android Application Development</li>
+                                <li>XCode and Android Studio</li>
+                                <li>Objective-C and Java</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="#scion">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/scion-card.svg" alt="Scion Logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --scion">
+                            <h2 class="heading --two">Scion</h2>
+                            <img data-src="img/icons/logos/scion-card-white.svg" alt="Scion Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>Multiple Site Redesigns</li>
+                                <li>Build Your Scion Configurator</li>
+                                <li>Prototyping and Feature Development</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="https://zuli.io/" target="_blank">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/zuli-card.svg" alt="Zuli Logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --zuli">
+                            <h2 class="heading --two">Zuli</h2>
+                            <img data-src="img/icons/logos/zuli-card-white.svg" alt="Zuli Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>Wordpress, Zendesk, Shopify</li>
+                                <li>Custom Theme Creation &amp; Management</li>
+                                <li>Email Templating</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="box-list__item">
+                    <a class="box-list__click-wrapper" href="http://toyotamobilityfoundation.org/en/" target="_blank">
+                        <div class="box-list__side box-list__side--front">
+                            <img data-src="img/icons/logos/tmf.svg" alt="Toyota Mobility Foundation Logo" class="box-list__logo">
+                        </div>
+                        <div class="box-list__side box-list__side--back --tmf">
+                            <h2 class="heading --two">Toyota Mobility Foundation</h2>
+                            <img data-src="img/icons/logos/tmf-reversed.svg" alt="Toyota Mobility Foundation Logo" class="box-list__logo --backside">
+                            <ul>
+                                <li>Build and Release Management</li>
+                                <li>Performance Enhancements</li>
+                                <li>Feature Development</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <svg class="box-list__icon icon icon-plus-circle">
+                                <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-details" id="skills">
+            <h2 class="heading --three u-margin-btm-med u-center-text">skills</h2>
+            <ul class="detail-list">
+                <li class="detail-list__item">
+                    <ul>
+                        <li>
+                            <h3>Core</h3>
+                        </li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3 / SASS</li>
+                        <li>Objective-C</li>
+                        <li>Swift</li>
+                    </ul>
+                </li>
+                <li class="detail-list__item">
+                    <ul>
+                        <li>
+                            <h3>Libraries</h3>
+                        </li>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Angular</li>
+                        <li>Mocha/Chai</li>
+                    </ul>
+                </li>
+                <li class="detail-list__item">
+                    <ul>
+                        <li>
+                            <h3>The Bits</h3>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jmschmidt" target="_blank">
+                                <svg class="detail-list__icon icon icon-github">
+                                    <use xlink:href="img/icons/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                            <p>Github for Exercises &amp; Projects</p>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/jmschmidt" target="_blank">
+                                <svg class="detail-list__icon icon icon-codepen">
+                                    <use xlink:href="img/icons/sprite.svg#icon-codepen"></use>
+                                </svg>
+                            </a>
+                            <p>CodePen for Sketches &amp; Prototypes</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="section-contact" id="contact">
+            <h2 class="heading --two u-margin-btm-med">Contact Me</h2>
+            <form id="contactForm" action="https://formcarry.com/s/rkDVX6i1m" class="form">
+                <div class="form__group">
+                    <input type="text" autocomplete="name" id="name" name="name" class="form__input" placeholder="Full Name" required>
+                    <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                    <input type="email" autocomplete="email" id="email" name="email" class="form__input" placeholder="Email Address" required>
+                    <label for="email" class="form__label">Email Address</label>
+                </div>
+                <div class="form__group">
+                    <textarea type="message" id="message" name="message" class="form__input --textarea" placeholder="Whats on your mind?" required></textarea>
+                    <label for="message" class="form__label --textarea">Whats on your mind?</label>
+                </div>
+                <div class="form__status">
+                    <svg class="form__status-icon --error icon icon-warning">
+                        <use xlink:href="img/icons/sprite.svg#icon-warning"></use>
+                    </svg>
+                    <img data-src="img/icons/logos/logo.svg" alt="Joseph M Schmidt Logo" class="form__status-icon --success">
+                    <div class="statusText"></div>
+                </div>
+                <div class="form__group">
+                    <button type="submit" class="form__btn">
+                        <svg class="form__icon --submit icon icon-paper-plane">
+                            <use xlink:href="img/icons/sprite.svg#icon-paper-plane"></use>
+                        </svg>
+
+                        <svg class="form__icon --loading icon icon-spinner">
+                            <use xlink:href="img/icons/sprite.svg#icon-spinner"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="mailto:joe@josephmschmidt.com" target="_blank" class="footer__button">
+            <svg class="footer__icon icon icon-envelop">
+                <use xlink:href="img/icons/sprite.svg#icon-envelop"></use>
+            </svg>
+        </a>
+        <a href="https://github.com/jmschmidt" target="_blank" class="footer__button">
+            <svg class="footer__icon icon icon-github">
+                <use xlink:href="img/icons/sprite.svg#icon-github"></use>
+            </svg>
+        </a>
+
+        <img data-src="img/icons/logos/logo-primary.svg" alt="Joseph M Schmidt Logo" class="footer__icon --main-logo">
+
+        <a href="https://codepen.io/jmschmidt" target="_blank" class="footer__button">
+            <svg class="footer__icon icon icon-codepen">
+                <use xlink:href="img/icons/sprite.svg#icon-codepen"></use>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/josephschmidt/" target="_blank" class="footer__button">
+            <svg class="footer__icon icon icon-linkedin">
+                <use xlink:href="img/icons/sprite.svg#icon-linkedin"></use>
+            </svg>
+        </a>
+    </footer>
+
+    <div class="modal --tangerine" id="tangerine">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="#projects" class="modal__close">
+                    <svg class="modal__icon icon icon-plus-circle">
+                        <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                    </svg>
+                </a>
+                <h4 class="heading --four">Tangerine Forward Banking</h4>
+            </div>
+            <div class="modal__body">
+                <div>
+                    <p class="modal__text">
+                        While working with DHAP Digital, I was a senior UI developer working on the  creation of testable Angular components that integrated into the Tangerine Forward Banking Experience applications. I built components for user authentication, user services, money transfer, and account management across multiple platforms. Unit tests were built in Mocha/Chai.
+                    </p>
+                    <div class="modal__button-list">
+                        <a href="https://www.tangerine.ca/app/#/" target="_blank" class="modal__button">
+                            <svg class="icon icon-network">
+                                <use xlink:href="img/icons/sprite.svg#icon-network"></use>
+                            </svg>
+                        </a>
+                        <a href="https://itunes.apple.com/ca/app/tangerine-mobile-banking/id847844097?mt=8" target="_blank" class="modal__button">
+                            <svg class="icon icon-appleinc">
+                                <use xlink:href="img/icons/sprite.svg#icon-appleinc"></use>
+                            </svg>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=ca.tangerine.clients.phone" target="_blank" class="modal__button">
+                            <svg class="icon icon-android">
+                                <use xlink:href="img/icons/sprite.svg#icon-android"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal --toyota" id="toyota">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="#projects" class="modal__close">
+                    <svg class="modal__icon icon icon-plus-circle">
+                        <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                    </svg>
+                </a>
+                <h4 class="heading --four">Toyota</h4>
+            </div>
+            <div class="modal__body">
+                <div class="modal__full">
+                    <p class="modal__text">
+                        For the past 10 years I have been working on one or more of Toyota's web properties in some way. <a class="link" href="https://toyota.com/usa" target="_blank">Toyota USA</a>, <a class="link" href="https://toyota.com/usa/operations/map.html"  target="_blank">Toyota Operations Map</a>, <a class="link" href="https://toyota.com/espanol/usa" target="_blank">Toyota USA Espanol</a>, <a class="link" href="https://toyota.com/gifony" target="_blank">Gifony</a>,  and the <a class="link" href="https://www.toyota.com/usa/environmentreport2017/" target="_blank">Toyota Environmental Report</a> are just a few of the projects I have been involved with recently.
+                    </p>
+                    <div class="modal__list-group">
+                        <ul class="modal__list">
+                            <li>
+                                <h4>Libraries</h4>
+                            </li>
+                            <li>Grunt</li>
+                            <li>Handlebars</li>
+                            <li>PhantomJS</li>
+                            <li>Mocha/Chai</li>
+                        </ul>
+                        <ul class="modal__list">
+                            <li>
+                                <h4>Tools</h4>
+                            </li>
+                            <li>NPM</li>
+                            <li>Jenkins</li>
+                            <li>TeamSite</li>
+                            <li>Omniture</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal --lexus" id="lexus">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="#projects" class="modal__close">
+                    <svg class="modal__icon icon icon-plus-circle">
+                        <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                    </svg>
+                </a>
+                <h4 class="heading --four">Lexus Product Handbook</h4>
+            </div>
+            <div class="modal__body">
+                <div class="modal__full">
+                    <p class="modal__text">
+                        The Lexus Product Handbook is a reference guide of all the current Lexus models. This application allows the user to pull up all the feature and specification data on a specific year and model Lexus vehicle. We simultaneously created both the iOS and Android versions of the app.
+                    </p>
+                    <div class="modal__button-list">
+                        <a href="https://itunes.apple.com/us/app/lexus-product-handbook/id1159157694?mt=8" target="_blank" class="modal__button">
+                            <svg class="icon icon-appleinc">
+                                <use xlink:href="img/icons/sprite.svg#icon-appleinc"></use>
+                            </svg>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.lexus.lpha&hl=en_US" target="_blank" class="modal__button">
+                            <svg class="icon icon-android">
+                                <use xlink:href="img/icons/sprite.svg#icon-android"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal --scion" id="scion">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="#projects" class="modal__close">
+                    <svg class="modal__icon icon icon-plus-circle">
+                        <use xlink:href="img/icons/sprite.svg#icon-plus-circle"></use>
+                    </svg>
+                </a>
+                <h4 class="heading --four">Scion</h4>
+            </div>
+            <div class="modal__body">
+                <div class="modal__full">
+                    <p class="modal__text">
+                        I worked on various Scion properties from 2008 up until the company was merged in the Toyota brand in 2016. While at DHAP Digital we built and maintained multiple redesigns of the main website and vehicle configurators along with many promotional campaigns.
+                    </p>
+                    <div class="modal__list-group">
+                        <ul class="modal__list">
+                            <li>Feature Development</li>
+                            <li>Prototyping</li>
+                            <li>Custom Theme Development</li>
+                            <li>Responsive Design</li>
+                            <li>Analytics</li>
+                        </ul>
+                        <ul class="modal__list">
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>Jenkins</li>
+                            <li>TeamSite</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" priority="async" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300">
+    <link rel="stylesheet" priority="queued" href="css/style.css">
+    <script type="text/javascript" src="/scripts/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8366783-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-8366783-1');
+    </script>
+
+</body>
+
+</html>

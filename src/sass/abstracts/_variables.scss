@@ -1,0 +1,52 @@
+// Colors Variables
+$color-primary: #ef233c;
+$color-primary-dark: #de152e;
+$color-primary-light: #f23048;
+
+$color-secondary: #8d99ae - 50;
+
+$color-tertiary: #2b2d42;
+
+$color-white: #edf2f4;
+$color-white-light: $color-white + 30;
+$color-white-dark: $color-white - 30;
+
+$color-error: #c00;
+$color-success: #27ae60;
+
+$color-tangerine: #f58426;
+$color-tangerine-light: $color-tangerine + 30;
+$color-tangerine-dark: $color-tangerine - 30;
+
+$color-toyota: #c00;
+$color-toyota-light: $color-toyota + 30;
+$color-toyota-dark: $color-toyota - 30;
+
+$color-lexus: #4579bc;
+$color-lexus-light: $color-lexus + 30;
+$color-lexus-dark: $color-lexus - 30;
+
+$color-scion: rgb(170, 0, 204);
+$color-scion-light: $color-scion + 30;
+$color-scion-dark: $color-scion - 30;
+
+$color-zuli: #27ae60;
+$color-zuli-light: $color-zuli + 30;
+$color-zuli-dark: $color-zuli - 30;
+
+$color-tmf: #fec029;
+$color-tmf-light: $color-tmf + 30;
+$color-tmf-dark: $color-tmf - 30;
+
+// Font Variables
+$default-font-size: 1.8rem;
+$default-font-color: $color-white;
+$default-font-color-light: $default-font-color + 30;
+$default-font-color-dark: $default-font-color - 30;
+$font-primary: "Josefin Sans", sans-serif;
+
+// Size Variables
+$max-panel-width: 130rem;
+
+// Input Varibales
+$textarea-height: 20vh;

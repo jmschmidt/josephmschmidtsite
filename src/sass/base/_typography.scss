@@ -1,0 +1,38 @@
+body {
+  font-family: $font-primary;
+  color: $default-font-color;
+  font-weight: 300;
+  font-size: $default-font-size;
+  line-height: 1.6;
+}
+
+.heading {
+  color: $default-font-color-light;
+  line-height: 1;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  display: block;
+  font-weight: 300;
+
+  &.--one {
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+  }
+
+  &.--two {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &.--three {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &.--four {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: none;
+    color: $default-font-color;
+  }
+}

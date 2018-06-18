@@ -1,0 +1,27 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-btm {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-btm-med {
+  margin-bottom: 4rem !important;
+}
+
+.link {
+  &:link,
+  &:visited {
+      display: inline-block;
+      color: $color-primary;
+      text-decoration: none;
+      transition: all .4s;
+  }
+
+  &:hover,
+  &:active {
+      color: $color-primary-dark;
+      transform: translateY(-.2rem);
+  }
+}

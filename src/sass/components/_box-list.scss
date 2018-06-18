@@ -1,0 +1,239 @@
+.box-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__click-wrapper {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+
+    height: 50vh;
+    min-height: 30rem;
+    max-height: 50rem;
+    width: 100%;
+
+    @include hoverSupport {
+      min-height: auto;
+    }
+
+    &:hover {
+      z-index: 10;
+    }
+
+    &:hover .box-list__side--front {
+      transform: translateY(-3px) scale(1.1) rotateY(180deg);
+    }
+
+    &:hover .box-list__side--back {
+      transform: translateY(-3px) scale(1.1) rotateY(0);
+    }
+  }
+
+  &__side {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s ease-out;
+    backface-visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--front {
+      background-color: $color-secondary;
+      background-image: linear-gradient(
+        to bottom right,
+        $color-secondary,
+        $color-secondary - 40
+      );
+      font-size: 3rem;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-color: $color-primary-dark;
+      background-image: linear-gradient(
+        to bottom right,
+        $color-primary,
+        $color-primary - 60
+      );
+
+
+      &.--tangerine {
+        background-color: $color-tangerine;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-tangerine-light,
+          $color-tangerine-dark
+        );
+      }
+
+      &.--toyota {
+        background-color: $color-toyota;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-toyota-light,
+          $color-toyota-dark
+        );
+      }
+
+      &.--lexus {
+        background-color: $color-lexus;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-lexus-light,
+          $color-lexus-dark
+        );
+      }
+
+      &.--scion {
+        background-color: $color-scion;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-scion-light,
+          $color-scion-dark
+        );
+      }
+
+      &.--zuli {
+        background-color: $color-zuli;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-zuli-light,
+          $color-zuli-dark
+        );
+      }
+
+      &.--tmf {
+        background-color: $color-tmf;
+        background-image: linear-gradient(
+          to bottom right,
+          $color-tmf-light,
+          $color-tmf-dark
+        );
+      }
+
+      h2 {
+        padding: 3rem;
+        text-align: center;
+        margin: 0;
+        backface-visibility: initial;
+      }
+
+      .box-list__logo.--backside { 
+        display: none; 
+        padding: 5rem 3rem 3rem;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin: 3rem 4rem;
+        padding: 0;
+
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @mixin stackSides {
+    &__item {
+      width: 100%;
+      height: auto;
+      max-height: none;
+      margin: 0 auto 5px;
+      display: block;
+    }
+
+    &__side {
+      // height: auto;
+      position: relative;
+
+      &--front {
+        display: none;
+      }
+
+      &--back {
+        transform: rotateY(0);
+
+        h2 { display: none; }
+        .box-list__logo.--backside { display: block; }
+        ul { font-size: 2rem; }
+      }
+    }
+
+    &:hover &__side--front {
+      transform: translateY(0) scale(1) rotateY(0);
+    }
+    &:hover &__side--back {
+      transform: translateY(0) scale(1) rotateY(0);
+    }
+  }
+
+  @include respond(phone) {
+    height: auto;
+    width: auto;
+    display: block;
+
+    @include stackSides;
+  }
+  @include hoverSupport {
+    @include stackSides;
+  }
+
+  &__logo {
+    width: 80%;
+    max-height: 90%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: $color-tertiary; 
+    fill: $color-tertiary;
+  }
+
+  &__icon {
+    fill: $default-font-color-dark;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.2s;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+
+    &:hover,
+    &:focus {
+      fill: $default-font-color-dark + 20;
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    @include respond(phone) {
+      position: relative;
+      margin: 2rem 0 0 auto;
+    }
+  }
+}

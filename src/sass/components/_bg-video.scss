@@ -1,0 +1,32 @@
+.bg-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__blur-edges {
+        background-image: radial-gradient(
+            farthest-side,
+            rgba($color-tertiary, .5), 
+            $color-tertiary);
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+    }
+  
+    @include respond(phone) {
+		background: url('../img/retro-sun.jpg') center center / cover no-repeat;
+		
+		&__content {
+			display: none;
+		}
+	}
+}

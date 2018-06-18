@@ -1,0 +1,39 @@
+.header {
+  height: 90vh;
+  position: relative;
+
+  &__text-box {
+    @include absoluteCenter;
+    text-align: center;
+    margin-top: -2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        margin-top: -4.5rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: $color-white;
+      height: 3px;
+      width: 20%;
+      display: block;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    width: 75%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
