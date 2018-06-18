@@ -142,25 +142,8 @@
     margin: 2rem;
     color: $color-tertiary;
 
-    // -moz-column-count: 2;
-    // -moz-column-gap: 4rem;
-    // -moz-column-rule: 1px solid $color-tertiary;
-    // column-count: 2;
-    // column-gap: 4rem;
-    // column-rule: 1px solid $color-tertiary;
-
-    // -moz-hyphens: auto;
-    // -ms-hyphens: auto;
-    // -webkit-hyphens: auto;
-    // hyphens: auto;
-
-    // @include respond(phone) {
-    //   -moz-column-count: 1;
-    //   column-count: 1;
-    // }
-
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 2.1rem;
     }
   }
 
@@ -174,6 +157,10 @@
     width: 50%;
     list-style: none;
     text-align: center;
+
+    @include respond(phone) {
+      font-size: 2.1rem;
+    }
 
     h4 {
       font-size: 2.5rem;
