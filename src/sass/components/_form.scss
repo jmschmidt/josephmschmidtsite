@@ -96,7 +96,7 @@
     position: absolute;
 
     &.--textarea {
-      transform: translateY((-$textarea-height - 4.5vh));
+      transform: translateY((-$textarea-height - 3rem));
     }
   }
 
